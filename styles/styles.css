@@ -63,6 +63,7 @@ main {
   background-size: cover;
   background-position: top;
   position: relative;
+  overflow: hidden;
 }
 main .containermain {
   max-width: 1200px;
@@ -80,6 +81,19 @@ main .containermain h1 {
 }
 main .containermain h1 span {
   color: #3bd3bb;
+}
+main .containermain .parallax {
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+  width: 180px;
+  transition: transform 0.2s ease;
+}
+main .containermain .otherposition {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  opacity: 0.4;
 }
 
 .boutdsm {
@@ -368,9 +382,7 @@ main .containermain h1 span {
   transform: skewX(-20deg);
 }
 .callcontainer .photoparallax {
-  position: absolute;
-  width: 100px;
-  right: 0;
+  display: none;
 }
 
 .partners {

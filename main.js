@@ -18,3 +18,17 @@ function addAnimation() {
     });
   });
 }
+
+
+const main = document.querySelector("main");
+  const parallaxImages = document.querySelectorAll(".parallax");
+  const parallaxAmount = 20; // Ajuste este valor conforme necessário
+
+  main.addEventListener("mousemove", (e) => {
+    const x = (window.innerWidth - e.pageX * parallaxAmount) / 100;
+    const y = (window.innerHeight - e.pageY * parallaxAmount) / 100;
+
+    parallaxImages.forEach((image) => {
+      image.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  });

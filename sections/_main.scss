@@ -9,6 +9,7 @@ main {
     background-size: cover;
     background-position: top;
     position: relative;
+    overflow: hidden;
     .containermain {
         max-width: 1200px;
         width: 100%;
@@ -24,6 +25,19 @@ main {
             span {
                 color: #3bd3bb;
             }
+        }
+        .parallax {
+            position: absolute;
+            right: 15%;
+            bottom: 10%;
+            width: 180px;
+            transition: transform 0.2s ease;
+        }
+        .otherposition {
+            position: absolute;
+            left: 15%;
+            top: 20%;
+            opacity: .4;
         }
     }
 }
