@@ -1,3 +1,4 @@
+// ANIMATION IN PARTNERS SECTION
 const scrollers = document.querySelectorAll(".scroller");
 
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -19,10 +20,10 @@ function addAnimation() {
   });
 }
 
-
+// ANIMATION NA MAIN
 const main = document.querySelector("main");
   const parallaxImages = document.querySelectorAll(".parallax");
-  const parallaxAmount = 20; // Ajuste este valor conforme necessário
+  const parallaxAmount = 15; // Ajuste este valor conforme necessário
 
   main.addEventListener("mousemove", (e) => {
     const x = (window.innerWidth - e.pageX * parallaxAmount) / 100;
@@ -32,3 +33,23 @@ const main = document.querySelector("main");
       image.style.transform = `translate(${x}px, ${y}px)`;
     });
   });
+
+// BACK TO TOP
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTopButton = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  });
+
+  backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});
