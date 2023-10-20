@@ -12,6 +12,139 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.boutdsm {
+  max-width: 1000xp;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 5rem 0rem;
+}
+.boutdsm .photobout {
+  height: 450px;
+}
+.boutdsm .textabout {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.boutdsm .textabout h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #055ccc;
+  font-size: 2.3rem;
+  max-width: 26.2ch;
+  font-weight: 800;
+}
+.boutdsm .textabout p {
+  font-family: "Montserrat", sans-serif;
+  max-width: 60ch;
+}
+.boutdsm .textabout .buttonboutdsm {
+  font-family: "Montserrat", sans-serif;
+  padding: 1.5rem 1rem;
+  border: 1px solid #055ccc;
+  border-radius: 15px;
+  max-width: 27%;
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  overflow: hidden;
+  color: #000000;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.2s ease-in;
+}
+.boutdsm .textabout .buttonboutdsm:hover {
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.3);
+  background-color: #055ccc;
+  transition: all 0.2s ease-out;
+}
+.boutdsm .textabout .buttonboutdsm:hover:before {
+  animation: shine-90 0.5s 0s linear;
+}
+.boutdsm .textabout .buttonboutdsm:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in;
+}
+.boutdsm .textabout .buttonboutdsm:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: white;
+  box-shadow: 0 0 15px 3px white;
+  transform: skewX(-20deg);
+}
+@keyframes shine-90 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+header .headercontainer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1rem;
+}
+header .headercontainer .logoheader {
+  height: 50px;
+}
+header .headercontainer nav ul {
+  display: flex;
+  gap: 20px;
+}
+header .headercontainer nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #055ccc;
+}
+
+main {
+  height: 70vh;
+  width: 100%;
+  background-image: url(../assets/bgmain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+main .containermain {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+main .containermain h1 {
+  position: absolute;
+  bottom: 200px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 4rem;
+  max-width: 12ch;
+}
+main .containermain h1 span {
+  color: #3bd3bb;
+}
+
 footer {
   background-color: #342c5c;
   padding: 5rem 0rem;
@@ -62,22 +195,16 @@ footer .footercontainer .groupfooter a {
   font-weight: 700;
   margin-bottom: 3rem;
 }
-.partners .companys {
-  display: flex;
-  justify-content: space-around;
-}
-
-.scroller {
-  max-width: 1500px;
+.partners .scroller {
+  max-width: 1100px;
   width: 100%;
   margin: 0 auto;
 }
-
-.scroller__inner {
+.partners .scroller .scroller__inner {
   padding-block: 1rem;
   display: flex;
   flex-wrap: nowrap;
-  gap: 1rem;
+  gap: 60px;
 }
 
 .scroller[data-animated=true] {

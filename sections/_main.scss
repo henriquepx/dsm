@@ -1,0 +1,29 @@
+@import '../abstract/variables';
+
+main {
+    height: 70vh;
+    width: 100%;
+
+    background-image: url(../assets/bgmain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    .containermain {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        h1 {
+            position: absolute;
+            bottom: 200px;
+            font-family: $font-primary;
+            color: #fff;
+            font-weight: 700;
+            font-size: 4rem;
+            max-width: 12ch;
+            span {
+                color: #3bd3bb;
+            }
+        }
+    }
+}
