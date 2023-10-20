@@ -1,0 +1,41 @@
+@import '../abstract/variables';
+
+footer {
+    background-color: $footer-color;
+    padding: 5rem 0rem;
+    .footercontainer {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .logodsm {
+            height: 20%;
+        }
+        .groupfooter {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h2 {
+                font-family: $font-primary;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: .9rem;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-family: $font-primary;
+                color: #fff;
+                font-size: .8rem;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
