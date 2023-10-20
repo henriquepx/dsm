@@ -301,6 +301,78 @@ main .containermain h1 span {
   text-align: left;
 }
 
+.callcontainer {
+  width: 100%;
+  height: 35vh;
+  background-color: #342c5c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.callcontainer h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.3rem;
+  text-align: center;
+}
+.callcontainer p {
+  color: #fff;
+  text-align: center;
+  max-width: 70ch;
+  font-size: 0.9rem;
+  margin: 10px 0px;
+}
+.callcontainer .buttondsm {
+  margin-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  padding: 1.5rem 1rem;
+  border: 1px solid #055ccc;
+  border-radius: 15px;
+  max-width: 27%;
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  overflow: hidden;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.2s ease-in;
+}
+.callcontainer .buttondsm:hover {
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.3);
+  background-color: #055ccc;
+  transition: all 0.2s ease-out;
+}
+.callcontainer .buttondsm:hover:before {
+  animation: shine-90 0.5s 0s linear;
+}
+.callcontainer .buttondsm:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in;
+}
+.callcontainer .buttondsm:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: white;
+  box-shadow: 0 0 15px 3px white;
+  transform: skewX(-20deg);
+}
+.callcontainer .photoparallax {
+  position: absolute;
+  width: 100px;
+  right: 0;
+}
+
 .partners {
   padding: 10rem 0rem;
 }
