@@ -64,3 +64,43 @@
         border-radius: 99px;
     }
 }
+
+.equipe {
+    padding: 3rem 0rem 5rem 0rem;
+    .containerequipe {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 130px;
+        .personequipe {
+            display: flex;
+            align-items: center;
+            background-color: $title-blue-color;
+            position: relative;
+            padding: 1.5rem 0rem;
+            width: 500px;
+            img {
+                position: absolute;
+                left: -6%;
+                height: 200px;
+                
+            }
+            .descequipe {
+                margin-left: 11rem;
+                h2 {
+                    color: #fff;
+                    font-family: $font-primary;
+                    font-weight: 700;
+                }
+                p {
+                    color: #fff;
+                    font-family: $font-primary;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

@@ -565,4 +565,42 @@ footer .footercontainer .groupfooter a {
   width: 10px;
   height: 10px;
   border-radius: 99px;
+}
+
+.equipe {
+  padding: 3rem 0rem 5rem 0rem;
+}
+.equipe .containerequipe {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 130px;
+}
+.equipe .containerequipe .personequipe {
+  display: flex;
+  align-items: center;
+  background-color: #055ccc;
+  position: relative;
+  padding: 1.5rem 0rem;
+  width: 500px;
+}
+.equipe .containerequipe .personequipe img {
+  position: absolute;
+  left: -6%;
+  height: 200px;
+}
+.equipe .containerequipe .personequipe .descequipe {
+  margin-left: 11rem;
+}
+.equipe .containerequipe .personequipe .descequipe h2 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.equipe .containerequipe .personequipe .descequipe p {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }/*# sourceMappingURL=styles.css.map */
