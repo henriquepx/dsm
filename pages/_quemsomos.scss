@@ -1,7 +1,7 @@
 @import '../abstract/variables';
 
 .mainquesomos {
-    height: 40vh;
+    height: 30vh;
     width: 100%;
 
     background-image: url(../assets/backgroundquemsomos.jpg);
@@ -12,6 +12,7 @@
     overflow: hidden;
 
     display: flex;
+    gap: 30px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -20,7 +21,6 @@
         color: #fff;
         font-weight: 700;
         font-size: 3rem;
-        margin-top: 8rem;
     }
 }
 
@@ -56,6 +56,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding: 5rem 0rem;
     span {
         display: block;
         background-color: rgb(212, 212, 212);
@@ -99,6 +100,36 @@
                     color: #fff;
                     font-family: $font-primary;
                     font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.endequipe {
+    .containerendequipe {
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        img {
+            height: 500px;
+        }
+        .textendequipe {
+            h2 {
+                font-family: $font-primary;
+                color: $title-blue-color;
+                font-size: 1.3rem;
+                font-weight: 800;
+                margin-bottom: 2rem;
+            }
+            p {
+                &:last-child {
+                    margin-top: .5rem;
                 }
             }
         }
