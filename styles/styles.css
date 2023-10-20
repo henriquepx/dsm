@@ -12,6 +12,27 @@
   font-family: "Montserrat", sans-serif;
 }
 
+header .headercontainer nav .menuhamburger {
+  display: none;
+  cursor: pointer;
+}
+header .headercontainer nav .menuhamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3 ease-in-out;
+  background-color: #055ccc;
+}
+
+@media (max-width: 768px) {
+  header .headercontainer nav .menu {
+    display: none;
+  }
+  header .headercontainer nav .menuhamburger {
+    display: block;
+  }
+}
 .boutdsm {
   max-width: 1000xp;
   width: 100%;

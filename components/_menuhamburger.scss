@@ -1,2 +1,36 @@
 @import '../abstract/variables';
 
+header {
+    .headercontainer {
+        nav {
+            .menuhamburger {
+                display: none;
+                cursor: pointer;
+                .bar {
+                    display: block;
+                    width: 25px;
+                    height: 3px;
+                    margin: 5px auto;
+                    -webkit-transition: all 0.3 ease-in-out;
+                    transition: all 0.3 ease-in-out;
+                    background-color: $title-blue-color;
+                  }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        .headercontainer {
+            nav {
+                .menu {
+                    display: none;
+                }
+                .menuhamburger {
+                    display: block;
+                }
+            }
+        }
+    }
+}
