@@ -1,0 +1,55 @@
+@import '../abstract/variables';
+
+.products {
+    padding: 4rem 0rem 4rem 0rem;
+    h1 {
+        font-family: $font-primary;
+        color: $title-blue-color;
+        font-weight: 700;
+        font-size: 2.3rem;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .productscontainer {
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .categoryproduct {
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            .imgproduct {
+                height: 500px;
+            }
+            .textproduct {
+                background-color: #f1f1f1;
+                position: absolute;
+                left: 45%;
+                padding: 1.5rem 2rem;
+                .logotitleproduct {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 1.5rem;
+                    img {
+                        height: 60px;
+                    }
+                    h2 {
+                        font-family: $font-primary;
+                        color: $title-blue-color;
+                        font-weight: 700;
+                        font-size: 2.3rem;
+                    }
+                }
+                p {
+                    max-width: 70ch;
+                }
+            }
+        }
+    }
+}
