@@ -1,0 +1,66 @@
+@import '../abstract/variables';
+
+.mainquesomos {
+    height: 40vh;
+    width: 100%;
+
+    background-image: url(../assets/backgroundquemsomos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .titlequemsomos {
+        font-family: $font-primary;
+        color: #fff;
+        font-weight: 700;
+        font-size: 3rem;
+        margin-top: 8rem;
+    }
+}
+
+.apresentationquemsomos {
+    padding: 4rem 0rem;
+    .containerapresentation {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        h2 {
+            font-family: $font-primary;
+            color: $title-blue-color;
+            font-weight: 700;
+            font-size: 2.3rem;
+            text-align: left;
+            width: 100%;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+}
+
+.threedots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    span {
+        display: block;
+        background-color: rgb(212, 212, 212);
+        width: 10px;
+        height: 10px;
+        border-radius: 99px;
+    }
+}

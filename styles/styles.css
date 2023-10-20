@@ -55,8 +55,11 @@ header .headercontainer nav ul li a {
   font-weight: 700;
   color: #055ccc;
 }
+header .headercontainer nav ul li .activemenu {
+  text-decoration: underline;
+}
 
-main {
+.mainprincipal {
   height: 70vh;
   width: 100%;
   background-image: url(../assets/bgmain.png);
@@ -66,12 +69,12 @@ main {
   position: relative;
   overflow: hidden;
 }
-main .containermain {
+.mainprincipal .containermain {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
-main .containermain h1 {
+.mainprincipal .containermain h1 {
   position: absolute;
   bottom: 200px;
   font-family: "Montserrat", sans-serif;
@@ -80,17 +83,17 @@ main .containermain h1 {
   font-size: 4rem;
   max-width: 12ch;
 }
-main .containermain h1 span {
+.mainprincipal .containermain h1 span {
   color: #3bd3bb;
 }
-main .containermain .parallax {
+.mainprincipal .containermain .parallax {
   position: absolute;
   right: 15%;
   bottom: 10%;
   width: 180px;
   transition: transform 0.2s ease;
 }
-main .containermain .otherposition {
+.mainprincipal .containermain .otherposition {
   position: absolute;
   left: 15%;
   top: 20%;
@@ -500,4 +503,66 @@ footer .footercontainer .groupfooter a {
   align-items: center;
   gap: 15px;
   margin-bottom: 3px;
+}
+
+.mainquesomos {
+  height: 40vh;
+  width: 100%;
+  background-image: url(../assets/backgroundquemsomos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainquesomos .titlequemsomos {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 8rem;
+}
+
+.apresentationquemsomos {
+  padding: 4rem 0rem;
+}
+.apresentationquemsomos .containerapresentation {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.apresentationquemsomos .containerapresentation h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #055ccc;
+  font-weight: 700;
+  font-size: 2.3rem;
+  text-align: left;
+  width: 100%;
+}
+.apresentationquemsomos .containerapresentation div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.threedots {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.threedots span {
+  display: block;
+  background-color: rgb(212, 212, 212);
+  width: 10px;
+  height: 10px;
+  border-radius: 99px;
 }/*# sourceMappingURL=styles.css.map */
