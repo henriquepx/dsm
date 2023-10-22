@@ -750,7 +750,7 @@ footer .footercontainer .groupfooter a {
 }
 
 .services .servicescontainer {
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
 }
@@ -778,7 +778,7 @@ footer .footercontainer .groupfooter a {
   padding: 1.5rem 1rem;
   border: 1px solid #055ccc;
   border-radius: 15px;
-  max-width: 31.7%;
+  max-width: 28.4%;
   position: relative;
   display: block;
   text-transform: uppercase;
@@ -818,8 +818,8 @@ footer .footercontainer .groupfooter a {
   margin-top: 5rem;
 }
 .services .servicescontainer .contentservice .titlescontent {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .services .servicescontainer .contentservice .titlescontent h2 {
   background-color: rgb(235, 235, 235);
@@ -827,15 +827,87 @@ footer .footercontainer .groupfooter a {
   padding: 1rem 0rem;
   text-align: center;
   cursor: pointer;
+  font-weight: 700;
 }
 .services .servicescontainer .contentservice .titlescontent h2:hover {
   background-color: #055ccc;
+  color: #fff;
 }
 .services .servicescontainer .contentservice .allsectionscontent .jstabcontent {
   display: none;
+  margin-top: 5rem;
+  flex-direction: column;
+  align-items: center;
+}
+.services .servicescontainer .contentservice .allsectionscontent .jstabcontent h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #055ccc;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.services .servicescontainer .contentservice .allsectionscontent .jstabcontent h1 span {
+  position: relative;
+}
+.services .servicescontainer .contentservice .allsectionscontent .jstabcontent h1 span::before {
+  content: "";
+  background-color: hsla(196, 61%, 58%, 0.75);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.services .servicescontainer .contentservice .allsectionscontent .jstabcontent h1 span:hover::before {
+  bottom: 0;
+  height: 100%;
+}
+.services .servicescontainer .contentservice .allsectionscontent .jstabcontent h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #055ccc;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  max-width: 35ch;
+}
+.services .servicescontainer .contentservice .allsectionscontent .jstabcontent p {
+  max-width: 70ch;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1rem;
+}
+.services .servicescontainer .contentservice .allsectionscontent .jstabcontent .containertabcontenttext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+  padding: 3rem 3rem 2rem 3rem;
+  margin-top: 2rem;
+}
+.services .servicescontainer .contentservice .allsectionscontent .jstabcontent .containertabcontenttext .contenttabcontenttext {
+  background-color: white;
+  padding: 3rem 2rem;
+  text-align: left;
+}
+.services .servicescontainer .contentservice .allsectionscontent .jstabcontent .containertabcontenttext .contenttabcontenttext .ptabcontenttext, .services .servicescontainer .contentservice .allsectionscontent .jstabcontent .containertabcontenttext .contenttabcontenttext .h3tabcontenttext {
+  text-align: left;
+  max-width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+.services .servicescontainer .contentservice .allsectionscontent .jstabcontent .containertabcontenttext .contenttabcontenttext .h3tabcontenttext {
+  margin: 1rem 0rem;
+  font-weight: 800;
+}
+.services .servicescontainer .contentservice .allsectionscontent .jstabcontent .containertabcontenttext .buttontocontact {
+  background-color: #055ccc;
+  padding: 1.5rem 2rem;
+  color: #fff;
+  margin-top: 2rem;
 }
 .services .servicescontainer .contentservice .allsectionscontent .jstabcontent.ativo {
-  display: block;
+  display: flex;
   animation: animationText 0.6s forwards;
 }
 
