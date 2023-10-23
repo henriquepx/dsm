@@ -94,16 +94,32 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-}
-
-.map {
-    margin: 5rem 0rem;
+    padding: 10rem 0rem 0rem 3rem;
     h2 {
         font-family: $font-primary;
-        text-align: center;
+        color: #fff;
         font-size: 2rem;
-        color: $title-blue-color;
         font-weight: 700;
-        margin-bottom: 1rem;
     }
+    .cellphone {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: .7rem;
+        width: 12%;
+        a {
+            font-family: $font-primary;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 700;
+        } 
+    }
+    h3 {
+            font-family: $font-primary;
+            color: #fff;
+        }
+}
+
+iframe {
+    margin-bottom: 3rem;
 }

@@ -1013,16 +1013,32 @@ footer .footercontainer .groupfooter a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  padding: 10rem 0rem 0rem 3rem;
+}
+.contactreview h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.contactreview .cellphone {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0.7rem;
+  width: 12%;
+}
+.contactreview .cellphone a {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.contactreview h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
 }
 
-.map {
-  margin: 5rem 0rem;
-}
-.map h2 {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  font-size: 2rem;
-  color: #055ccc;
-  font-weight: 700;
-  margin-bottom: 1rem;
+iframe {
+  margin-bottom: 3rem;
 }/*# sourceMappingURL=styles.css.map */
