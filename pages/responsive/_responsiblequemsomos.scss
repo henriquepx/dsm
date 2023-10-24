@@ -1,0 +1,53 @@
+@import '../../abstract/variables';
+
+@media (max-width: 450px) {
+    .mainquesomos {
+        .titlequemsomos {
+            font-size: 2rem;
+        }
+    }
+    
+    .apresentationquemsomos {
+        padding: 4rem 1.5rem;
+        .containerapresentation {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+    
+    .equipe {
+        padding: 3rem 1.2rem 3rem 1.2rem;
+        .containerequipe {
+            grid-template-columns: 1fr;
+            row-gap: 70px;
+            .personequipe {
+                margin-left: 1.2rem;
+                width: 300px;
+                img {
+                    left: -14%;
+                    height: 150px;
+                }
+                .descequipe {
+                    margin-left: 8.2rem;
+                }
+            }
+        }
+    }
+
+    .endequipe {
+        padding: 0rem 1.2rem;
+        .containerendequipe {
+            flex-direction: column-reverse;
+            gap: 50px;
+            img {
+                height: 400px;
+            }
+            .textendequipe {
+                .buttondsm {
+                    max-width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

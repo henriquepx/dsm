@@ -68,6 +68,7 @@ header .headercontainer nav ul li .activemenu {
   background-position: top;
   position: relative;
   overflow: hidden;
+  padding-left: 2rem;
 }
 .mainprincipal .containermain {
   max-width: 1200px;
@@ -577,6 +578,7 @@ footer .footercontainer .groupfooter a {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
   row-gap: 130px;
 }
 .equipe .containerequipe .personequipe {
@@ -1106,5 +1108,49 @@ iframe {
   }
   footer .footercontainer {
     gap: 70px;
+  }
+}
+@media (max-width: 450px) {
+  .mainquesomos .titlequemsomos {
+    font-size: 2rem;
+  }
+  .apresentationquemsomos {
+    padding: 4rem 1.5rem;
+  }
+  .apresentationquemsomos .containerapresentation {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .equipe {
+    padding: 3rem 1.2rem 3rem 1.2rem;
+  }
+  .equipe .containerequipe {
+    grid-template-columns: 1fr;
+    row-gap: 70px;
+  }
+  .equipe .containerequipe .personequipe {
+    margin-left: 1.2rem;
+    width: 300px;
+  }
+  .equipe .containerequipe .personequipe img {
+    left: -14%;
+    height: 150px;
+  }
+  .equipe .containerequipe .personequipe .descequipe {
+    margin-left: 8.2rem;
+  }
+  .endequipe {
+    padding: 0rem 1.2rem;
+  }
+  .endequipe .containerendequipe {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .endequipe .containerendequipe img {
+    height: 400px;
+  }
+  .endequipe .containerendequipe .textendequipe .buttondsm {
+    max-width: 100%;
+    text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */
