@@ -1,0 +1,57 @@
+@import '../../abstract/variables';
+
+@media (max-width: 450px) {
+    .services {
+        .servicescontainer {
+            .introservices {
+                flex-direction: column;
+                .introtextservices {
+                    flex-direction: column;
+                    p {
+                        font-size: 1.7rem;
+                    }
+                    .buttondsm {
+                        max-width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+            .contentservice {
+                .titlescontent {
+                    flex-wrap: wrap;
+                }
+                .allsectionscontent {
+                    .jstabcontent {
+                        h1 {
+                            margin-bottom: 1rem;
+                            span {
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                        }
+                        h2 {
+                            max-width: 100%;
+                        }
+                        p {
+                            max-width: 100%;
+                        }
+                        .containertabcontenttext {
+                            padding: 1rem;
+                            .contenttabcontenttext {
+                                padding: 3rem 2rem;
+                            }
+                            .buttontocontact {
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .jstabcontent.ativo {
+                        display: flex;
+                        animation: animationText .6s forwards;
+                      }
+                }
+            }
+        }
+    }
+}

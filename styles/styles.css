@@ -820,8 +820,8 @@ footer .footercontainer .groupfooter a {
   margin-top: 5rem;
 }
 .services .servicescontainer .contentservice .titlescontent {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 .services .servicescontainer .contentservice .titlescontent h2 {
   background-color: rgb(235, 235, 235);
@@ -1172,5 +1172,48 @@ iframe {
   .endequipe .containerendequipe .textendequipe .buttondsm {
     max-width: 100%;
     text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .services .servicescontainer .introservices {
+    flex-direction: column;
+  }
+  .services .servicescontainer .introservices .introtextservices {
+    flex-direction: column;
+  }
+  .services .servicescontainer .introservices .introtextservices p {
+    font-size: 1.7rem;
+  }
+  .services .servicescontainer .introservices .introtextservices .buttondsm {
+    max-width: 100%;
+    text-align: center;
+  }
+  .services .servicescontainer .contentservice .titlescontent {
+    flex-wrap: wrap;
+  }
+  .services .servicescontainer .contentservice .allsectionscontent .jstabcontent h1 {
+    margin-bottom: 1rem;
+  }
+  .services .servicescontainer .contentservice .allsectionscontent .jstabcontent h1 span::before {
+    display: none;
+  }
+  .services .servicescontainer .contentservice .allsectionscontent .jstabcontent h2 {
+    max-width: 100%;
+  }
+  .services .servicescontainer .contentservice .allsectionscontent .jstabcontent p {
+    max-width: 100%;
+  }
+  .services .servicescontainer .contentservice .allsectionscontent .jstabcontent .containertabcontenttext {
+    padding: 1rem;
+  }
+  .services .servicescontainer .contentservice .allsectionscontent .jstabcontent .containertabcontenttext .contenttabcontenttext {
+    padding: 3rem 2rem;
+  }
+  .services .servicescontainer .contentservice .allsectionscontent .jstabcontent .containertabcontenttext .buttontocontact {
+    text-align: center;
+  }
+  .services .servicescontainer .contentservice .allsectionscontent .jstabcontent.ativo {
+    display: flex;
+    animation: animationText 0.6s forwards;
   }
 }/*# sourceMappingURL=styles.css.map */

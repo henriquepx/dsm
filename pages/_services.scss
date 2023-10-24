@@ -110,8 +110,8 @@
         .contentservice {
             margin-top: 5rem;
             .titlescontent {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                display: flex;
+                justify-content: space-between;
                 h2 {
                     background-color: rgb(235, 235, 235);
                     width: 100%;
