@@ -1,0 +1,21 @@
+@import '../../abstract/variables';
+
+@media (max-width: 450px) {
+    .contact {
+        padding: 1.2rem;
+        h1 {
+            font-size: 1.5rem;
+        }
+        .contactcontainer {
+            flex-direction: column;
+        }
+    }
+    
+    .contactreview {
+        height: 100%;
+        padding: 5rem 0rem 5rem 1.2rem;
+        .cellphone {
+            width: 100%;
+        }
+    }
+}

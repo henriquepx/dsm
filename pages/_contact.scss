@@ -11,14 +11,14 @@
         font-size: 2rem;
     }
     .contactcontainer {
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
+        display: flex;
         gap: 100px;
         margin-top: 2rem;
         .orderinfo {
             counter-reset: list-counter;
             list-style: none;
             li {
+                max-width: 45ch;
                 counter-increment: list-counter;
                 margin-bottom: 10px;
                 &::before {
@@ -29,6 +29,7 @@
             }
         }
         .containerform {
+            flex: 1;
             form {
                 width: 100%;
                 display: flex;

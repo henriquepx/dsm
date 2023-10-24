@@ -935,8 +935,7 @@ footer .footercontainer .groupfooter a {
   font-size: 2rem;
 }
 .contact .contactcontainer {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  display: flex;
   gap: 100px;
   margin-top: 2rem;
 }
@@ -945,6 +944,7 @@ footer .footercontainer .groupfooter a {
   list-style: none;
 }
 .contact .contactcontainer .orderinfo li {
+  max-width: 45ch;
   counter-increment: list-counter;
   margin-bottom: 10px;
 }
@@ -952,6 +952,9 @@ footer .footercontainer .groupfooter a {
   content: counter(list-counter) ". ";
   font-weight: bold;
   margin-right: 5px;
+}
+.contact .contactcontainer .containerform {
+  flex: 1;
 }
 .contact .contactcontainer .containerform form {
   width: 100%;
@@ -1045,6 +1048,24 @@ iframe {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 450px) {
+  .contact {
+    padding: 1.2rem;
+  }
+  .contact h1 {
+    font-size: 1.5rem;
+  }
+  .contact .contactcontainer {
+    flex-direction: column;
+  }
+  .contactreview {
+    height: 100%;
+    padding: 5rem 0rem 5rem 1.2rem;
+  }
+  .contactreview .cellphone {
+    width: 100%;
+  }
+}
 @media (max-width: 450px) {
   .mainprincipal {
     padding-left: 1rem;
