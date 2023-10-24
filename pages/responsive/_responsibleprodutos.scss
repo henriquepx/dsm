@@ -1,0 +1,25 @@
+@import '../../abstract/variables';
+
+@media (max-width: 450px) {
+    .products {
+        padding: 2rem 0rem; 
+        .productscontainer {
+            .categoryproduct {
+                flex-direction: column-reverse; 
+                gap: 50px; 
+                .imgproduct {
+                    margin-bottom: 12rem;
+                    height: 300px;
+                }
+                .textproduct {
+                    left: 0; 
+                    padding: 1rem;
+                    p {
+                        max-width: 100%; 
+                    }
+                }
+            }
+        }
+    
+    }
+}

@@ -1111,6 +1111,26 @@ iframe {
   }
 }
 @media (max-width: 450px) {
+  .products {
+    padding: 2rem 0rem;
+  }
+  .products .productscontainer .categoryproduct {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .products .productscontainer .categoryproduct .imgproduct {
+    margin-bottom: 12rem;
+    height: 300px;
+  }
+  .products .productscontainer .categoryproduct .textproduct {
+    left: 0;
+    padding: 1rem;
+  }
+  .products .productscontainer .categoryproduct .textproduct p {
+    max-width: 100%;
+  }
+}
+@media (max-width: 450px) {
   .mainquesomos .titlequemsomos {
     font-size: 2rem;
   }
