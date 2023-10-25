@@ -35,10 +35,12 @@ header .headercontainer nav .menuhamburger.active .bar:nth-child(2) {
 header .headercontainer nav .menuhamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
   transition: 0.4s;
+  background-color: #fff;
 }
 header .headercontainer nav .menuhamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
   transition: 0.4s;
+  background-color: #fff;
 }
 
 @media (max-width: 768px) {
