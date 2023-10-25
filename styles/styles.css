@@ -50,19 +50,37 @@ header .headercontainer nav .menuhamburger.active .bar:nth-child(3) {
     position: relative;
     z-index: 900;
   }
-  .menuhamburgercontent {
-    display: none;
-  }
   .menuhamburgercontent.active {
     animation: ShowingContentHamburger 0.5s ease-in-out;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     width: 100%;
     height: 100%;
+    padding: 2rem 1.2rem;
     top: 0;
     position: fixed;
-    background-color: #eeeeee;
+    background-color: #055ccc;
     z-index: 800;
+  }
+  .menuhamburgercontent.active h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  .menuhamburgercontent.active nav {
+    margin-top: 1rem;
+  }
+  .menuhamburgercontent.active nav ul li {
+    margin-left: 0.4rem;
+  }
+  .menuhamburgercontent.active nav ul li a {
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .menuhamburgercontent.active img {
+    width: 150px;
   }
 }
 @keyframes ShowingContentHamburger {
@@ -163,6 +181,10 @@ header .headercontainer nav ul li .activemenu {
 
 #backToTop:hover {
   background-color: #0056b3;
+}
+
+.menuhamburgercontent {
+  display: none;
 }
 
 .boutdsm {
