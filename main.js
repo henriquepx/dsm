@@ -70,3 +70,13 @@ tabMenu.forEach((itemMenu, index) => {
     activeTab(index);
   })
 })
+
+// MENU HAMBURGUER
+
+const hamburguerButton = document.querySelector('.menuhamburger');
+const menuContentHamburger = document.querySelector('.menuhamburgercontent');
+
+hamburguerButton.addEventListener('click', () => {
+  hamburguerButton.classList.toggle('active');
+  menuContentHamburger.classList.toggle('active');
+})
