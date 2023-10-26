@@ -1,6 +1,6 @@
 @import '../../abstract/variables';
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
     .mainprincipal {
         padding-left: 1rem;
         .containermain {
@@ -74,7 +74,11 @@
     footer {
         padding: 5rem 1.4rem;
         .footercontainer {
+            flex-direction: column;
             gap: 70px;
+            .logodsm {
+                width: 150px;
+            }
         }
     }
 }
