@@ -640,8 +640,9 @@ footer .footercontainer .groupfooter a {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   row-gap: 130px;
 }
@@ -1219,7 +1220,7 @@ iframe {
     max-width: 100%;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .mainquesomos .titlequemsomos {
     font-size: 2rem;
   }
@@ -1234,8 +1235,8 @@ iframe {
     padding: 3rem 1.2rem 3rem 1.2rem;
   }
   .equipe .containerequipe {
-    grid-template-columns: 1fr;
-    row-gap: 70px;
+    justify-content: center;
+    gap: 50px;
   }
   .equipe .containerequipe .personequipe {
     margin-left: 1.2rem;
@@ -1246,7 +1247,7 @@ iframe {
     height: 150px;
   }
   .equipe .containerequipe .personequipe .descequipe {
-    margin-left: 8.2rem;
+    margin-left: 7.4rem;
   }
   .endequipe {
     padding: 0rem 1.2rem;

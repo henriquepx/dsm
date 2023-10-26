@@ -73,8 +73,9 @@
         width: 100%;
         margin: 0 auto;
 
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
         row-gap: 130px;
         .personequipe {

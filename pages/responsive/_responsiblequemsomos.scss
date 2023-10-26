@@ -1,6 +1,6 @@
 @import '../../abstract/variables';
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
     .mainquesomos {
         .titlequemsomos {
             font-size: 2rem;
@@ -18,8 +18,8 @@
     .equipe {
         padding: 3rem 1.2rem 3rem 1.2rem;
         .containerequipe {
-            grid-template-columns: 1fr;
-            row-gap: 70px;
+            justify-content: center;
+            gap: 50px;
             .personequipe {
                 margin-left: 1.2rem;
                 width: 300px;
@@ -28,7 +28,7 @@
                     height: 150px;
                 }
                 .descequipe {
-                    margin-left: 8.2rem;
+                    margin-left: 7.4rem;
                 }
             }
         }
