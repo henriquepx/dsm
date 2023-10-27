@@ -1,6 +1,6 @@
 @import '../../abstract/variables';
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
     .services {
         .servicescontainer {
             .introservices {
@@ -50,4 +50,8 @@
             }
         }
     }
+}
+
+@media (max-width: 768px) {
+    
 }

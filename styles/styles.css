@@ -1264,7 +1264,7 @@ iframe {
     text-align: center;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .services .servicescontainer .introservices {
     flex-direction: column;
   }
