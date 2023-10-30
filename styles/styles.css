@@ -68,7 +68,7 @@ header .headercontainer nav .menuhamburger.active .bar:nth-child(3) {
   .menuhamburgercontent.active h1 {
     color: #fff;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .menuhamburgercontent.active nav {
     margin-top: 1rem;
@@ -78,7 +78,7 @@ header .headercontainer nav .menuhamburger.active .bar:nth-child(3) {
   }
   .menuhamburgercontent.active nav ul li a {
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
   }
   .menuhamburgercontent.active img {
