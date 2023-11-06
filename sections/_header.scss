@@ -17,15 +17,16 @@ header {
         nav {
             ul {
                 display: flex;
-                gap: 20px;
                 li {
                     a {
                         font-family: $font-primary;
                         font-weight: 700;
                         color: $title-blue-color;
+                        padding: .5rem 1rem;
                     }
                     .activemenu {
-                        text-decoration: underline;
+                        background-color: $title-blue-color;
+                        color: #fff;
                     }
                 }
             }
